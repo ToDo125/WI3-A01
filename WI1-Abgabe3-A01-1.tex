@@ -1,0 +1,165 @@
+% Createt 2016 by Jens Wiebe for the use in the course: Wirtschaftinformatik 1 at Universität Bremen
+% The use of TexLive 2016 as compiler-package and TexStudio 2.11.2 as editor are recommended
+
+\documentclass[12pt,utf8]{scrartcl}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%																%
+%			Pakete werden definiert.							%
+%																%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Babel Sprachpaket, spezifish ngerman, nutzen
+\usepackage[ngerman]{babel}
+% Referenzen ermöglichen
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,	% false: eingerahmte Referenzen; true: eingefärbte Referenzen
+	linkcolor=blue,     % Farbe der internen Referenzen (falls eingerahmte Referenzen: linkbordercolor)
+	citecolor=blue,     % Farbe der Quellen-Referenzen
+	filecolor=blue,     % Farbe von Datei-Referenzen
+	urlcolor=blue     	% Farbe von URL-Referenzen
+}
+% Einstellug um URL's umbrechen zu können. Mit \do\[Zeichen] werden Zeichen bestimmt, an denen eine URL umgebrochen werden darf.
+\usepackage{etoolbox}
+\apptocmd{\UrlBreaks}{\do\-\do\%\do\.}{}{}
+% Schöne Referenzen von varioref nutzen, in deutsch
+\usepackage[ngerman]{varioref}
+% Verschiedene Symbole nutzbar machen
+\usepackage{amsmath,amssymb,latexsym,amsfonts,amsthm,amsbsy,qtree}
+% Url's vernünftig darstellen
+\usepackage{url}
+% Um Akronyme zu erlauben, aber nur wenn diese auch tatsächlich genutzt werden.
+\usepackage[printonlyused]{acronym}
+% Universal Character Set einbinden und damit deutsche Umlaute nutzbar machen
+\usepackage[utf8]{inputenc} 
+% Grafiken einbinden
+\usepackage{graphicx}
+% Optionen für die Figure Umgebung setzen (h= here, t= top, b= bottom, p= page(eigene Seite), != override(erwzingt die exakte Position)
+\usepackage{float}
+% Hübsche Header für die Abgabe
+\usepackage{fancyhdr}
+% Hauptsächlich für \midrule \toprule und \bottomrule in Tabellen
+\usepackage{booktabs}
+% Ermöglicht itemize-, enumerate- und description- Umegebungen anzupassen. (vgl. https://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_enumitem)
+\usepackage{enumitem}
+% Ermöglicht Einstellmöglichkeiten für captions über \captionsetup.
+\usepackage[justification=centering]{caption}
+% Zitierweise natbib zur Verfügung stellen.
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+% Einfügen von PDFs mit \include{file}
+\usepackage{pdfpages}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%																%
+%			Daten eintragen.									%
+%																%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Die Autoren der Abgabe.
+\newcommand{\teilnehmerI}{Tom Dombeck}
+\newcommand{\mattI}{4510671}
+\newcommand{\mailI}{todo@uni-bremen.de}
+
+\newcommand{\teilnehmerII}{Lasse Warnke}
+\newcommand{\mattII}{4515161}
+\newcommand{\mailII}{lwarnke@uni-bremen.de}
+
+% Gruppennummer[Tutoriumsbuchstaben+Gruppennummer]?
+\newcommand{\thisgroup}{A01}
+% Wann ist Abgabe?
+\newcommand{\abgabedatum}{28.01.2019}
+% Die wie vielte Abgabe ist es?
+\newcommand{\nummer}{3}
+% Was war Thema?
+\newcommand{\thema}{Kosten-Nutzen-Betrachtung}
+% Deine TutorIn?
+\newcommand{\thistutor}{Tim Haß}
+
+% Welches Semester?
+\newcommand{\thissemester}{WiSe 2018/19}
+% Welcher Kurs?
+\newcommand{\thiscourse}{Wirtschaftsinformatik 1}
+% Abkürzung für den Kurs?
+\newcommand{\thisshortcourse}{WI1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%																%
+%			Automatisches Generieren							%
+%																%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Kopfzeile wird generiert
+\pagestyle{fancy}
+\fancyhead{} 													% Clear
+	\fancyhead[LO,RE]{\thissemester \\ \thisshortcourse} 		% Kurs und Semester auf der linken Seite
+	\fancyhead[RO,LE]{TutorIn: \thistutor \\ Gruppe: \thisgroup }% Tutor und Gruppennummer auf der rechten Seite
+	\fancyfoot{} 												% Clear
+	\cfoot{\thepage} 											% Seitenzahl am unteren Rand
+	\setlength{\headsep}{2cm} 									% 2 cm Freiraum zwischen Header und Text
+
+\begin{document}
+
+
+% Deckblatt wird generiert
+\begin{titlepage}
+	\vspace*{\baselineskip}			% Freiraum zwischen ersten Eintrag und oberer Seitenrand
+	\centering						% Alles Nachfolgende zentrieren
+	\LARGE							% Alles Nachfolgende groß
+	\thiscourse \\ 					% Den Kurs einfügen
+	\vspace{1cm}					% Skip 1 cm
+	{\Huge 							% {} - Eingerahmte riesig
+	\textbf{Abgabe \nummer: \thema}} \\ % Augabennummer und Thema hinzugefügt
+	\vspace{1.5cm} 					% Skip 1.5 cm
+	TutorIn: \thistutor \\ 			% TutorIn eingefügt
+	\abgabedatum \\ 				% Abgabedatum eingefügt
+	\vfill 							% Den Rest der Seite füllen
+	Gruppe: \thisgroup \\ 			% Gruppennummer eingefügt
+	\vspace{.5cm} 					% Skip 0.5 cm
+	\large 							% Etwas kleinere Groß
+	\begin{tabular}{c|c} 			% Daten der Studierenden werden eingefügt
+	\teilnehmerI	& \teilnehmerII \\ %& \teilnehmerIII
+	\mattI	& \mattII \\ %&  \mattIII
+	\mailI	& \mailII \\ %& \mailIII
+	\end{tabular} 
+\end{titlepage}
+
+\thispagestyle{empty}
+\tableofcontents
+
+\newpage
+\setcounter{page}{1} % Setzt die Nummierung der Seite auf 1.
+
+\section{Nutzwertanalyse}
+
+\subsection{Kriterien}
+1. Aufwand für die Einhaltung von Gesetzen und Verwaltungsvorschriften
+
+2. Auswirkung auf IT-Sicherheit
+
+3. Mitarbeiter bezogenen Wirkung
+
+Zufriedenheit/Motivation
+
+4. Auswirkung auf die IT-Organisation
+
+5. Auswirkung auf externe Adressaten
+
+6. Erfüllung weiterer strategischer Punkte
+
+\subsection{Durchführung Nutzwertanalyse}
+
+\section{Kostenabschätzung nach TCO-Modell}
+
+\subsection{Kriterien}
+
+\subsection{Durchführung der Kostenabschätzung}
+
+\section{Fazit und Empfehlung}
+
+\newpage
+\addcontentsline{toc}{section}{Literaturverzeichniss}%manual entry into table of content
+\bibliography{Literaturdatenbank}
+
+\end{document}
