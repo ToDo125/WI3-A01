@@ -8,7 +8,7 @@
 %			Pakete werden definiert.							%
 %																%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage{bibgerm}
 % Babel Sprachpaket, spezifish ngerman, nutzen
 \usepackage[ngerman]{babel}
 % Referenzen ermöglichen
@@ -47,7 +47,7 @@
 \usepackage[justification=centering]{caption}
 % Zitierweise natbib zur Verfügung stellen.
 \usepackage{natbib}
-\bibliographystyle{plainnat}
+\bibliographystyle{plain}
 % Einfügen von PDFs mit \include{file}
 \usepackage{pdfpages}
 \usepackage[official]{eurosym}
@@ -184,7 +184,7 @@ Im Folgenden sind die Kriterien der Nutzwertanalyse und die Gewichtung dieser in
  & Gesamt & 100\\
 \hline
 \end{tabular}
-\caption*{Bei den Kriterien und der Gewichtung dieser wurde sich sehr stark an dem Projekt der Landeshauptstadt München aus dem Jahr 2003 orientiert [Quelle].}
+\caption*{Bei den Kriterien und der Gewichtung dieser wurde sich sehr stark an dem Projekt der Landeshauptstadt München aus dem Jahr 2003 orientiert \citep{muenchen}.}
 \end{table}
 
 \begin{table}[h!]
@@ -288,7 +288,7 @@ Auch bei der IT-Sicherheit schneidet Linux besser als Windows ab. Linux-Systeme 
 
 Die meisten Mitarbeiter würden wahrscheinlich ein Windows-System und Fachanwendungen, die auf diesem laufen bevorzugen, da es oft die weiter verbreiteten und auch die momentan an der Universität Bremen verwendeten sind. Bedeutet, wenn man bei diesem System bleibt, gibt es keine Umstellung für die Mitarbeiter. Auch für neue Mitarbeiter sind Windows-Systeme wahrscheinlich attraktiver, da, falls sie vorher schon einen Arbeitgeber hatten, die Wahrscheinlichkeit, dass sie mit Windows und Office gearbeitet haben, größer ist als die, dass sie mit Linux und Open-Source-Produkten gearbeitet haben. Das macht auch die Qualifikationssicherung einfacher, da bereits vorhandene Kenntnisse genutzt werden können, um intern neue Mitarbeiter anzulernen. Deswegen haben wir in diesem Punkt Windows mehr Punkte zugesprochen als Linux. 
 
-Diese Punkte kann man zu einem Teil auf die Auswirkung auf die Studierenden übertragen. Auch sie kennen und benutzen mit hoher Wahrscheinlichkeit Windows-Systeme und würden wahrscheinlich auch diese an der Universität bevorzugen. Allerdings wechseln die Studierenden regelmäßig, da die Studienzeit auf ungefähr drei bis fünf Jahre begrenzt ist. Neue Studenten lernen sowieso neue Programme, Fachanwendungen und sonstiges, deswegen macht es für sie wahrscheinlich einen geringeren Unterschied, ob sie sich zusätzlich auch an ein gegebenenfalls neues Betriebssystem anpassen müssen. Deswegen hat Windows in diesem Punkt die gleiche Punktzahl wie in Punkt 3 bekommen, Linux aber einen Punkt mehr. 
+Diese Punkte kann man zu einem Teil auf die Auswirkung auf die Studierenden übertragen. Auch sie kennen und benutzen mit hoher Wahrscheinlichkeit Windows-Systeme und würden wahrscheinlich auch diese an der Universität bevorzugen. Allerdings wechseln die Studierenden regelmäßig, da die Studienzeit auf ungefähr drei bis fünf Jahre begrenzt ist. Neue Studenten lernen sowieso neue Programme, Fachanwendungen und sonstiges, deswegen macht es für sie wahrscheinlich einen geringeren Unterschied, ob sie sich zusätzlich auch an ein gegebenenfalls neues Betriebssystem anpassen müssen. Auch könnte für eine Minderheit an Studenten die Umstellung auf Windows dafür sorgen, dass die Universität Bremen als Studienplatz attraktiver wird. Gleiches ist aber auch in umgekehrter Richtung möglich. Deswegen hat Windows in diesem Punkt die gleiche Punktzahl wie in Punkt 3 bekommen, Linux aber einen Punkt mehr. 
 
 Die Organisation der IT würde wahrscheinlich unter Linux einfacher sein. Man hätte ein homogenes System in dem nur Linux zu finden ist und nicht wie momentan Server auf denen Linux läuft und Client-Rechner die Windows-Betriebssysteme haben. Auch sind Linux-Systeme einfacher in der Administration. Allerdings würde die Integration von bestehenden Systemen und Anwendungen bei einer Umstellung eventuell Probleme machen, sodass wir insgesamt Linux einen Punkt mehr als Windows gegeben haben.
 
@@ -337,11 +337,11 @@ Die Kostenabschätzung bezieht sich auf einen Zeitraum von 3 Jahren. Hierfür we
 \hline
 Kostenfaktoren & Teilkosten & Gesamt \\
 \hline
-Lizenzen & Ubuntu an sich kostenlos. Bei Nutzung von Ubuntu Advantage Lizenzkosten von 1.800.000\euro . \newline 70 Fachanwendungen: 30.000\euro \space pro Lizenz auf 3 Jahre & 2.100.000\euro \newline bzw. \newline 3.900.000\euro \\
+Lizenzen & Ubuntu an sich kostenlos. Bei Nutzung von Ubuntu Advantage Lizenzkosten von 1.800.000\euro \cite{ubuntu} . \newline 70 Fachanwendungen: 30.000\euro \space pro Lizenz auf 3 Jahre & 2.100.000\euro \newline bzw. \newline 3.900.000\euro \\
 \hline
 Entwicklung und Anpassung & Anpassung / Neuentwicklung von 30 Fachanwendungen. 30.000\euro \space pro Anwendung & 900.000\euro \\
 \hline
-Schulungen & 1-Tägige Schulungen für 3500 Mitarbeiter. ca. 400\euro \space pro Person & 1.400.000\euro \\
+Schulungen & 1-Tägige Schulungen für 3500 Mitarbeiter. ca. 400\euro \space pro Person \cite{itsch} \cite{protra} & 1.400.000\euro \\
 \hline
 Personalkosten & 120 Mitarbeiter. ca. 3500\euro \space pro Person pro Monat auf einen Zeitraum von 5 Monaten & 2.100.000\euro \\
 \hline
@@ -360,33 +360,54 @@ Gesamt & & 8.566.250\euro \newline bzw. \newline 10.366.250\euro \space mit Ubun
 
 Der Faktor Lizenzkosten teilt sich in zwei Bereiche, einmal die Kosten für das Betriebssystem und andererseits die für die nicht mit Linux kompatiblen Fachanwendungen (also die Anwendungen die neu angeschafft werden müssen).
 
-Das von uns gewählte Linux-Betriebssystem Ubuntu ist an sich erstmal kostenlos, auch im kommerziellen Bereich. Allerdings bietet Canonical (der Distributor von Ubuntu) eine für Unternehmen gedachte Version mit dem Namen \emph{Ubuntu Advantage} welche erweiterten Support bietet. Diese hat einen Preis von 150\euro \space pro Lizenz und Jahr (eine Lizenz ist für ein Gerät gültig). Da es für uns nicht wirklich ersichtlich ist ob die erweiterte Version von Ubuntu bei einer großen Anzahl von Systemen sinnvoll ist führen wir die Kosten für beide Möglichkeiten auf.
+Das von uns gewählte Linux-Betriebssystem Ubuntu ist an sich erstmal kostenlos, auch im kommerziellen Bereich. Allerdings bietet Canonical (der Distributor von Ubuntu) eine für Unternehmen gedachte Version mit dem Namen \emph{Ubuntu Advantage}, welche erweiterten Support bietet. Diese hat einen Preis von 150\euro \space pro Lizenz und Jahr (eine Lizenz ist für ein Gerät gültig) \cite{ubuntu}. Da es für uns nicht wirklich ersichtlich ist, ob die erweiterte Version von Ubuntu bei einer großen Anzahl von Systemen sinnvoll ist, führen wir die Kosten für beide Möglichkeiten auf.
 
-Bei den Lizenzkosten für die inkompatiblen Fachanwendungen ist es schwierig die genauen Kosten festzulegen da es keine Angabe dazu gibt um welche Anwendungen es sich genau handelt. Wir gehen in unserer Abschätzung davon aus, dass es für 70 von den inkompatiblen Anwendungen alternativen für Linux gibt. Da es keine genaueren Angaben zu den eigentlichen Anwendungen gibt legen wir ein Preis von durchschnittlich 10.000\euro \space pro Anwendung pro Jahr fest.
+Bei den Lizenzkosten für die inkompatiblen Fachanwendungen ist es schwierig die genauen Kosten festzulegen, da es keine Angabe dazu gibt um welche Anwendungen es sich genau handelt. Wir gehen in unserer Abschätzung davon aus, dass es für 70 von den inkompatiblen Anwendungen alternativen für Linux gibt. Da es keine genaueren Angaben zu den eigentlichen Anwendungen gibt, legen wir ein Preis von durchschnittlich 10.000\euro \space pro Anwendung pro Jahr fest.
 
-Die restlichen 30 Fachanwendungen müssen entweder an Linux angepasst werden oder teilweise neu entwickelt werden. Da es zu den Kosten von solchen Anpassungen keine wirklichen Quellen gibt gehen wir von Kosten von ca. 30.000\euro pro Anwendung aus.
+Die restlichen 30 Fachanwendungen müssen entweder an Linux angepasst werden oder teilweise neu entwickelt werden. Da es zu den Kosten von solchen Anpassungen keine wirklichen Quellen gibt, gehen wir von Kosten von ca. 30.000\euro pro Anwendung aus.
 
-Einen großen Teil der Kosten muss für die Schulung bzw. Einführung der Mitarbeiter in die neue Arbeitsumgebung aufgewendet werden. Bei den meisten "Anfänger-"Schulungen für Linux gehen über 2 bis 3 Tage und kosten zwischen 1200\euro \space und 1500\euro \space pro Person . Wir haben uns für eine eintägige Schulung entschieden. Da es hierfür keine Angaben für die Kosten gibt haben wir im Vergleich zu den mehrtägigen Schulungen einen Preis von 400\euro \space pro Person festgelegt.
+Einen großen Teil der Kosten muss für die Schulung bzw. Einführung der Mitarbeiter in die neue Arbeitsumgebung aufgewendet werden. Die meisten "Anfänger-"Schulungen für Linux gehen über 2 bis 3 Tage und kosten zwischen 1200\euro \space und 1500\euro \space pro Person \cite{itsch} \cite{protra}. Wir haben uns für eine eintägige Schulung entschieden. Da es hierfür keine Angaben für die Kosten gibt, haben wir im Vergleich zu den mehrtägigen Schulungen einen Preis von 400\euro \space pro Person festgelegt.
 
-Die Personalkosten Umfassen die Gehälter der 120 Mitarbeiter die direkt an der Umstellung beteiligt sind. Da es keine Angabe über diese 120 Personen und z.B. deren Qualifikation, haben wir einen Durchschnittsgehalt von 3.500\euro \space festgelegt. In unserer Abschätzung dauert die Zeit in welcher diese Personen mit der Umstellung beschäftigt sind ca. 5 Monate.
+Die Personalkosten umfassen die Gehälter der 120 Mitarbeiter, die direkt an der Umstellung beteiligt sind. Da es keine Angabe über diese 120 Personen und z.B. deren Qualifikation gibt, haben wir einen Durchschnittsgehalt von 3.500\euro \space festgelegt. In unserer Abschätzung dauert die Zeit, in welcher diese Personen mit der Umstellung beschäftigt sind, ca. 5 Monate.
 
 Die Administration des neuen Systems dürfte im Vergleich zum Jetzigen keinen Mehraufwand machen und daher auch keine Mehrkosten bedeuten.
 
 Für die Optimierung und Verbesserung im laufenden Betrieb haben wir Kosten von ca. 10.000\euro \space pro Monat festgelegt. Diese Kosten umfassen die Gehälter von zwei Vollzeitangestellten (jeweils 3.500\euro \space pro Monat) und mögliche Nebenkosten.
 
-Da die Systeme während der eigentlichen Umstellung nicht genutzt werden können entsteht ein Ausfall. Dieser hat zwar keine direkten Kosten allerdings können während dieser Zeit die Mitarbeiter nicht arbeiten wodurch ein Verlust entsteht. Da die Uni keinen direkten Umsatz hat haben wir diesen Verlust anhand der geschätzten Gehälter der Mitarbeiter berechnet. Wir haben als Durchschnittsgehalt 3000\euro \space im Monat festgelegt. 
+Da die Systeme während der eigentlichen Umstellung nicht genutzt werden können, entsteht ein Ausfall. Dieser hat zwar keine direkten Kosten, allerdings können während dieser Zeit die Mitarbeiter nicht arbeiten wodurch ein Verlust entsteht. Da die Uni keinen direkten Umsatz hat, haben wir diesen Verlust anhand der geschätzten Gehälter der Mitarbeiter berechnet. Wir haben als Durchschnittsgehalt 3000\euro \space im Monat festgelegt. 
 Die eigentliche Umstellung der Systeme auf Linux dauert in unserer Schätzung eine Woche. Die Ausfallzeit liegt bei uns in der Woche der Umstellung bei 20\%. Das ergibt einen Verlust von ca. 525.000\euro .
 
-Die Umstellung auf ein neues Betriebssystem und neue Anwendungen kann sich auf die Mitarbeiter in Form von verringerter Produktivität in der Zeit direkt nach der Umstellung auswirken. Den Verlust der hierdurch entsteht haben wir auf die selbe Weise wie bei den Ausfallskosten durch die Umstellung berechnet. Nach unserer Schätzung verringert sich die Produktivität in den ersten 3 Wochen nach der Umstellung auf die neuen Systeme um durchschnittlich 15\%. Dies sorgt für einen Verlust von ca. 1.181.250\euro .
+Die Umstellung auf ein neues Betriebssystem und neue Anwendungen kann sich auf die Mitarbeiter in Form von verringerter Produktivität in der Zeit direkt nach der Umstellung auswirken. Den Verlust, der hierdurch entsteht, haben wir auf die selbe Weise wie bei den Ausfallkosten durch die Umstellung berechnet. Nach unserer Schätzung verringert sich die Produktivität in den ersten 3 Wochen nach der Umstellung auf die neuen Systeme um durchschnittlich 15\%. Dies sorgt für einen Verlust von ca. 1.181.250\euro .
 \newline
 
 Diese Kosten zusammen addiert ergeben in den ersten 3 Jahren Gesamtkosten von 8.566.250\euro \space für eine Umstellung auf Standard Ubuntu. Und Gesamtkosten von 10.366.250\euro \space für eine Umstellung auf Ubuntu Advantage.
+
 \newpage
 \section*{Fazit und Empfehlung}
 \addcontentsline{toc}{section}{Fazit und Empfehlung}
 
-\newpage
-\addcontentsline{toc}{section}{Literaturverzeichnis}
-\bibliography{Literaturdatenbank}
+An die Stadt Bremen.
+\newline
 
+Sehr geehrte Damen und Herren,
+\newline
+
+nach ausführlicher Betrachtung und unter Einbeziehung sowohl der qualitativ-strategischen als auch der monetären Faktoren ist unser Team zu dem Entschluss gekommen, dass ein Umstieg von Windowsprodukten auf Linuxprodukte auf den Client-Rechnern der Universität Bremen nicht wirtschaftlich wäre. 
+
+Betrachtet man nur die qualitativ-strategischen Punkte könnte man argumentieren, dass es sehr wohl wirtschaftlich wäre, doch unserer Meinung nach ist der Unterschied in diesem Bereich zu gering, als dass dieser Vorteil der Linux-Systeme die Mehrkosten, die eine Umstellung mit sich bringen würden, rechtfertigen könnte. So sind z.B. Personalschulungskosten sehr hoch und die Schulungen wahrscheinlich nicht einmal erwünscht. Des weiteren bringt die Umstellung enorme Personalkosten mit sich. Aus unserer Sicht lohnt sich ein Umstieg auf Linux also nicht. 
+
+Wenn man allerdings die Gewichtung sehr stark auf die qualitativ-strategische Seite legt, lohnt es sich auf Linux umzusteigen, da so unter Anderem die Sicherheit des Systems maximiert und die Komplexität minimiert wird. Allerdings würde dadurch die Universität als Arbeitgeber für viele, die Windowsprodukte kennen und benutzen, unattraktiver werden. 
+\newline
+
+Mit freundlichen Grüßen
+\newline
+
+Lasse Warnke und Tom Dombeck
+
+
+\newpage
+\begin{flushleft}
+\bibliography{Literaturdatenbank}
+\addcontentsline{toc}{section}{Literaturverzeichnis}
+\end{flushleft}
 \end{document}
