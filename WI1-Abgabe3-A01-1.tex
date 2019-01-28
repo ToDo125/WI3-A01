@@ -100,7 +100,7 @@
 	\setlength{\headsep}{2cm} 									% 2 cm Freiraum zwischen Header und Text
 
 \begin{document}
-
+\setlength{\parindent}{0em}
 
 % Deckblatt wird generiert
 \begin{titlepage}
@@ -131,35 +131,93 @@
 \newpage
 \setcounter{page}{1} % Setzt die Nummierung der Seite auf 1.
 
-\section{Nutzwertanalyse}
+\section*{Nutzwertanalyse}
+\addcontentsline{toc}{section}{Nutzwertanalyse}
 
-\subsection{Kriterien}
-1. Aufwand für die Einhaltung von Gesetzen und Verwaltungsvorschriften
+\subsection*{Kriterien}
+\addcontentsline{toc}{subsection}{Kriterien}
 
-2. Auswirkung auf IT-Sicherheit
+Im Folgenden sind die Kriterien der Nutzwertanalyse und die Gewichtung dieser in Tabellenform aufgelistet. Anschließend werden die Kriterien noch kurz beschrieben.
 
-3. Mitarbeiter bezogenen Wirkung
+\begin{table}[h]
+\begin{tabular}{|p{0,5cm}|p{8,5cm}|p{2,5cm}|p{2,6cm}|}
+\hline
+ & Kriterium & Gewichtung Kriterium & Gewichtung Unterkriterien\\
+\hline
+\textbf{1.} &  \textbf{Aufwand für die Einhaltung von Gesetzen und Verwaltungsvorschriften} & & \\
+\hline
+\hline
+\textbf{2.} & \textbf{Auswirkung auf IT-Sicherheit} & & \\
+\hline
+2.1 & Auswirkung auf das Bedrohungspotential & & \\
+\hline
+2.2 & Auswirkung auf die Stabilität des Systems & & \\
+\hline
+\hline
+\textbf{3.} & \textbf{Mitarbeiter bezogenen Wirkung} & & \\
+\hline
+3.1 & Zufriedenheit/Motivation/Attraktivität der Arbeitsbedingung & & \\
+\hline
+3.2 & Qualifikationssicherung & & \\
+\hline
+\hline
+\textbf{4.} & \textbf{Studierenden bezogenen Wirkung} & & \\
+\hline
+\hline
+\textbf{5.} & \textbf{Auswirkung auf die IT-Organisation} & & \\
+\hline
+5.1 & Integration von bestehenden Programmen & & \\
+\hline
+5.2 & Auswirkung auf die Komplexität der Systemumgebung & & \\
+\hline
+5.3 & Auswirkung auf das IT-Betriebsmanagement & & \\
+\hline
+\hline
+\textbf{6.} & \textbf{Auswirkung auf externe Adressaten} & & \\
+\hline
+\hline
+\textbf{7.} & \textbf{Produktivitätseffekte} & & \\
+\hline
+\hline
+\hline
+ & Gesamt & 100 & \\
+\hline
+\end{tabular}
+\caption*{Bei den Kriterien und der Gewichtung dieser wurde sich sehr stark an dem Projekt der Landeshauptstadt München aus dem Jahr 2003 orientiert [Quelle].}
+\end{table}
+\vspace{0,25cm}
 
-Zufriedenheit/Motivation
+Das erste Kriterium misst den Aufwand, der betrieben werden muss, um alle gesetzlichen Vorschriften einzuhalten. Hierzu zählen auch alle Anforderungen bezüglich Datensicherheit und Datenschutz. Da sich im Netzwerk der Universität teilweise sehr sensible Daten wie Forschungsergebnisse oder persönliche Daten der Studierenden befinden, haben wir dieses Kriterium relativ schwer gewichtet.
 
-4. Auswirkung auf die IT-Organisation
+Das zweite Kriterium misst die Auswirkungen auf die Sicherheit des IT-Systems. Ist das System angreifbarer von außen und wie stabil ist das System? Die Begründung für die schwere Gewichtung ist ähnlich wie bei Kriterium 1 (s.o.). 
 
-5. Auswirkung auf externe Adressaten
+Das dritte Kriterium beschreibt die Auswirkung auf die Mitarbeiter der Universität. Sie haben täglich mit den Client-Rechnern und den Fachanwendungen zu tun. Als besondere Punkte gibt es hier die Attraktivität des Arbeitsplatzes für alle Mitarbeiter und die Qualifikationssicherung dieser. Deswegen haben wir diesem Punkt mit \% eine relativ große Gewichtung zugesprochen. 
 
-6. Erfüllung weiterer strategischer Punkte
+Das vierte Kriterium beschreibt hingegen die Auswirkung auf die Studierenden der Universität Bremen. Auch sie arbeiten an den Client-Rechnern der Universität, allerdings sind sie im Allgemeinen nicht so angewiesen und nutzen im Vergleich auch weniger Rechner. Deswegen liegt hier die Gewichtung tiefer als bei den Mitarbeitern. 
 
-\subsection{Durchführung Nutzwertanalyse}
+Das fünfte Kriterium misst die Auswirkung auf die IT-Organisation. Hierzu zählt die Integration der Fachanwendungen in das System, die Auswirkungen auf die Komplexität der Systemumgebung und die Auswirkung auf das IT-Betriebsmanagement. 
 
-\section{Kostenabschätzung nach TCO-Modell}
+Das sechste Kriterium beschreibt die Auswirkung auf externe Adressaten, also die Kommunikation über die Grenzen der Universität hinaus. Dieses Kriterium ist nicht besonders schwer zu gewichten, da die Kommunikation größtenteils bei allen Systemen und Fachanwendungen gleich ablaufen kann.
 
-\subsection{Kriterien}
+Das siebte Kriterium misst die Produktivitätseffekte wie fehlende Standards bei Programmen, längere oder kürzere Bearbeitungszeiten, eventuelle Ausfälle wegen der Umstellung des Systems usw. Da sich diese Probleme, falls sie auftreten, wahrscheinlich auf die Zeit der Umstellung beschränken, ist dieses Kriterium relativ schwach gewichtet.
 
-\subsection{Durchführung der Kostenabschätzung}
+\subsection*{Durchführung Nutzwertanalyse}
+\addcontentsline{toc}{subsection}{Durchführung Nutzwertanalyse}
 
-\section{Fazit und Empfehlung}
+\section*{Kostenabschätzung nach TCO-Modell}
+\addcontentsline{toc}{section}{Kostenabschätzung nach TCO-Modell}
+
+\subsection*{Kriterien}
+\addcontentsline{toc}{subsection}{Kriterien}
+
+\subsection*{Durchführung der Kostenabschätzung}
+\addcontentsline{toc}{subsection}{Durchführung der Kostenabschätzung}
+
+\section*{Fazit und Empfehlung}
+\addcontentsline{toc}{section}{Fazit und Empfehlung}
 
 \newpage
-\addcontentsline{toc}{section}{Literaturverzeichniss}%manual entry into table of content
+\addcontentsline{toc}{section}{Literaturverzeichnis}
 \bibliography{Literaturdatenbank}
 
 \end{document}
