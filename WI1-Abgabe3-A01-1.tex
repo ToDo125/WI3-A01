@@ -50,6 +50,7 @@
 \bibliographystyle{plainnat}
 % Einfügen von PDFs mit \include{file}
 \usepackage{pdfpages}
+\usepackage[official]{eurosym}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %																%
@@ -207,11 +208,63 @@ Das siebte Kriterium misst die Produktivitätseffekte wie fehlende Standards bei
 \section*{Kostenabschätzung nach TCO-Modell}
 \addcontentsline{toc}{section}{Kostenabschätzung nach TCO-Modell}
 
-\subsection*{Kriterien}
-\addcontentsline{toc}{subsection}{Kriterien}
+\subsection*{Kostenfaktoren}
+\addcontentsline{toc}{subsection}{Kostenfaktoren}
+
+\textbf{Lizenzen.} Der Faktor Lizenzen umfasst die Lizenzkosten für das neue Betriebssystem sowie die Lizenzkosten für die nicht mit Linux kompatiblen Fachanwendungen.
+\newline
+
+\textbf{Entwicklung und Anpassungen.} Diese umfassen die Kosten für die Anpassung oder im Notfall für dei Neuentwicklung von inkompatiblen Fachanwendeungen für welche es keine Alternativen oder zumindest keine Sinnvollen Alternativen unter Linux gibt.
+\newline
+
+\textbf{Schulungen.} Die Kosten für die Schulung der Mitarbeiter für die Nutzung des neuen Systems.
+\newline
+
+\textbf{Personal.} Die Personalkosten die während des Projekts bzw. während der Umstellung anfallen. Also die Personalkosten der Personen und Fachkräfte unmittelbar an der Umstellung beteiligt sind.
+\newline
+
+\textbf{Administration.} Die Kosten für die Administration des Gesamtsystems.
+\newline
+
+\textbf{Optimierung.} Unter Optimierung sind die Kosten zusammengefasst welche durch nachträgliche Veränderungen am System oder durch Optimierung im laufenden Betrieb anfallen.
+\newline
+
+\textbf{Ausfall durch Umstellung.} Dies bezeichnet den Gewinnverlust der während der wirklichen Umstellung, also die Zeit während das System nicht benutzbar ist, anfällt.
+\newline
+
+\textbf{Verringerte Produktivität.} Dieser Faktor beschreibt den Effekt der Umstellung auf die Produktivität der Mitarbeiter. Also die negativen Auswirkungen auf diese aufgrund der neuen Umgebung.
+\newpage
 
 \subsection*{Durchführung der Kostenabschätzung}
 \addcontentsline{toc}{subsection}{Durchführung der Kostenabschätzung}
+
+Die Kostenabschätzung bezieht sich auf einen Zeitraum von 3 Jahren. Hierfür werden die bereits in Aufgabe c genannten Kostenfaktoren berücksichtigt.
+
+\begin{table}[h]
+\begin{tabular}{|p{5cm}|p{8cm}|p{2cm}|}
+\hline
+Kostenfaktoren & Teilkosten & Gesamt \\
+\hline
+Lizenzen & Ubuntu an sich kostenlos. Bei nutzung von Ubuntu Advantage Lizenzkosten von 1.800.000\euro . \newline 70 Fachanwendungen: 30.000\euro \space pro Lizenz auf 3 Jahre & 2.100.000\euro \newline bzw. \newline 3.900.000\euro \\
+\hline
+Entwicklung und Anpassung & Anpassung / Neuentwicklung von 30 Fachanwendungen. 30.000\euro \space pro Anwendung & 900.000\euro \\
+\hline
+Schulungen & 1-Tägige Schulungen für 3500 Mitarbeiter. ca. 400\euro \space pro Person & 1.400.000\euro \\
+\hline
+Personalkosten & 120 Mitarbeiter. ca. 3500\euro \space pro Person pro Monat auf einen Zeitraum von 5 Monaten & 2.100.000\euro \\
+\hline
+Administration & Kein nennenswerter Unterschied zur aktuellen Situation (Windows). Möglicherweise sogar günstiger. & \\
+\hline
+Optimierung & Optimierung und Verbesserung. ca. 10.000\euro pro Monat & 360.000\euro \\
+\hline
+Ausfall durch Umstellung & & \\
+\hline
+Verringerte Produktivität & Verringerung der Produktivität von ca. 15\% für 3 Wochen bei einem duchschnittlichen Gehalt von ca. 3000\euro \space im Monat & 1.181.250\euro \\
+\hline
+Geasmt & & 8.041.250\euro \newline bzw. \newline 9.841.250\euro \space mit Ubuntu Advantage \\
+\hline
+\end{tabular}
+\end{table}
 
 \section*{Fazit und Empfehlung}
 \addcontentsline{toc}{section}{Fazit und Empfehlung}
