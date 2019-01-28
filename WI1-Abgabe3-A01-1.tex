@@ -32,7 +32,7 @@
 % Um Akronyme zu erlauben, aber nur wenn diese auch tatsächlich genutzt werden.
 \usepackage[printonlyused]{acronym}
 % Universal Character Set einbinden und damit deutsche Umlaute nutzbar machen
-\usepackage[utf8]{inputenc} 
+\usepackage[utf8]{inputenc}
 % Grafiken einbinden
 \usepackage{graphicx}
 % Optionen für die Figure Umgebung setzen (h= here, t= top, b= bottom, p= page(eigene Seite), != override(erwzingt die exakte Position)
@@ -123,7 +123,7 @@
 	\teilnehmerI	& \teilnehmerII \\ %& \teilnehmerIII
 	\mattI	& \mattII \\ %&  \mattIII
 	\mailI	& \mailII \\ %& \mailIII
-	\end{tabular} 
+	\end{tabular}
 \end{titlepage}
 
 \thispagestyle{empty}
@@ -141,98 +141,66 @@
 Im Folgenden sind die Kriterien der Nutzwertanalyse und die Gewichtung dieser in Tabellenform aufgelistet. Anschließend werden die Kriterien noch kurz beschrieben.
 
 \begin{table}[h]
-\begin{tabular}{|p{0,5cm}|p{12cm}|p{2cm}|}
+\begin{tabular}{|p{0,5cm}|p{8,5cm}|p{2,5cm}|p{2,6cm}|}
 \hline
- & Kriterien & Gewichtung Kriterien\\
+ & Kriterium & Gewichtung Kriterium & Gewichtung Unterkriterien\\
 \hline
-\textbf{1.} &  \textbf{Einhaltung von Gesetzen und Verwaltungsvorschriften}  & 26,2\\
-\hline
-\hline
-\textbf{2.} & \textbf{IT-Sicherheit} & 26,2\\
-\hline
-2.1 & Bedrohungspotential & 15,7 \\
-\hline
-2.2 & Stabilität des Systems & 10,5 \\
+\textbf{1.} &  \textbf{Aufwand für die Einhaltung von Gesetzen und Verwaltungsvorschriften} & & \\
 \hline
 \hline
-\textbf{3.} & \textbf{Mitarbeiter bezogenen Wirkung} & 16,7\\
+\textbf{2.} & \textbf{Auswirkung auf IT-Sicherheit} & & \\
 \hline
-3.1 & Attraktivität der Arbeitsbedingung & 15,7 \\
+2.1 & Auswirkung auf das Bedrohungspotential & & \\
 \hline
-3.2 & Qualifikationssicherung & 10,5 \\
-\hline
-\hline
-\textbf{4.} & \textbf{Studierenden bezogenen Wirkung} & 9,4\\
+2.2 & Auswirkung auf die Stabilität des Systems & & \\
 \hline
 \hline
-\textbf{5.} & \textbf{IT-Organisation} & 16,7\\
+\textbf{3.} & \textbf{Mitarbeiter bezogenen Wirkung} & & \\
 \hline
-5.1 & Integration von bestehenden Programmen & 3,3 \\
+3.1 & Zufriedenheit/Motivation/Attraktivität der Arbeitsbedingung & & \\
 \hline
-5.2 & Komplexität der Systemumgebung & 5,0 \\
-\hline
-5.3 & IT-Betriebsmanagement & 8,4 \\
+3.2 & Qualifikationssicherung & & \\
 \hline
 \hline
-\textbf{6.} & \textbf{Externe Adressaten} & 2,4\\
+\textbf{4.} & \textbf{Studierenden bezogenen Wirkung} & & \\
 \hline
 \hline
-\textbf{7.} & \textbf{Produktivitätseffekte} & 2,4\\
+\textbf{5.} & \textbf{Auswirkung auf die IT-Organisation} & & \\
+\hline
+5.1 & Integration von bestehenden Programmen & & \\
+\hline
+5.2 & Auswirkung auf die Komplexität der Systemumgebung & & \\
+\hline
+5.3 & Auswirkung auf das IT-Betriebsmanagement & & \\
+\hline
+\hline
+\textbf{6.} & \textbf{Auswirkung auf externe Adressaten} & & \\
+\hline
+\hline
+\textbf{7.} & \textbf{Produktivitätseffekte} & & \\
 \hline
 \hline
 \hline
- & Gesamt & 100\\
+ & Gesamt & 100 & \\
 \hline
 \end{tabular}
 \caption*{Bei den Kriterien und der Gewichtung dieser wurde sich sehr stark an dem Projekt der Landeshauptstadt München aus dem Jahr 2003 orientiert [Quelle].}
 \end{table}
+\vspace{0,25cm}
 
-\begin{table}[h!]
-\centering
-\begin{tabular}{|r|r|r|r|r|r|r|r|c|l|}
-\hline
-Bewertungskriterien & 1 & 2 & 3 & 4 & 5 & 6 & 7 & Gewicht & Faktor \\
-\hline
-1 & X & 1 & 2 & 2 & 2 & 2 & 2 & 11 & 26,2 \\
-\hline
-2 & 1 & X & 2 & 2 & 2 & 2 & 2 & 11 & 26,2 \\
-\hline
-3 & 0 & 0 & X & 2 & 1 & 2 & 2 & 7 & 16,7 \\
-\hline
-4 & 0 & 0 & 0 & X & 0 & 2 & 2 & 4 & 9,4 \\
-\hline
-5 & 0 & 0 & 1 & 2 & X & 2 & 2 & 7 & 16,7 \\
-\hline
-6 & 0 & 0 & 0 & 0 & 0 & X & 1 & 1 & 2,4 \\
-\hline
-7 & 0 & 0 & 0 & 0 & 0 & 1 & X & 1 & 2,4 \\
-\hline
-Summe: & & & & & & & & 42 & 100 \\
-\hline
-\end{tabular}
-\caption*{Die Berechnung der Gewichtung der Kriterien}
-\end{table}
+Das erste Kriterium misst den Aufwand, der betrieben werden muss, um alle gesetzlichen Vorschriften einzuhalten. Hierzu zählen auch alle Anforderungen bezüglich Datensicherheit und Datenschutz. Da sich im Netzwerk der Universität teilweise sehr sensible Daten wie Forschungsergebnisse oder persönliche Daten der Studierenden befinden, haben wir dieses Kriterium relativ schwer gewichtet.
 
-\newpage
-\textbf{Einhaltung von Gesetzen und Verwaltungsvorschriften.} Das erste Kriterium misst den Aufwand, der betrieben werden muss, um alle gesetzlichen Vorschriften einzuhalten. Hierzu zählen auch alle Anforderungen bezüglich Datensicherheit und Datenschutz. Da sich im Netzwerk der Universität teilweise sehr sensible Daten wie Forschungsergebnisse oder persönliche Daten der Studierenden befinden, haben wir dieses Kriterium relativ schwer gewichtet.
-\newline
+Das zweite Kriterium misst die Auswirkungen auf die Sicherheit des IT-Systems. Ist das System angreifbarer von außen und wie stabil ist das System? Die Begründung für die schwere Gewichtung ist ähnlich wie bei Kriterium 1 (s.o.).
 
-\textbf{IT-Sicherheit.} Das zweite Kriterium misst die Auswirkungen auf die Sicherheit des IT-Systems. Ist das System angreifbarer von außen und wie stabil ist das System? Die Begründung für die schwere Gewichtung ist ähnlich wie bei Kriterium 1 (s.o.). 
-\newline
+Das dritte Kriterium beschreibt die Auswirkung auf die Mitarbeiter der Universität. Sie haben täglich mit den Client-Rechnern und den Fachanwendungen zu tun. Als besondere Punkte gibt es hier die Attraktivität des Arbeitsplatzes für alle Mitarbeiter und die Qualifikationssicherung dieser. Deswegen haben wir diesem Punkt mit \% eine relativ große Gewichtung zugesprochen.
 
-\textbf{Mitarbeiter bezogenen Wirkung.} Das dritte Kriterium beschreibt die Auswirkung auf die Mitarbeiter der Universität. Sie haben täglich mit den Client-Rechnern und den Fachanwendungen zu tun. Als besondere Punkte gibt es hier die Attraktivität des Arbeitsplatzes für alle Mitarbeiter und die Qualifikationssicherung dieser. Deswegen haben wir diesem Punkt mit 16,7 \% eine relativ große Gewichtung zugesprochen. 
-\newline
+Das vierte Kriterium beschreibt hingegen die Auswirkung auf die Studierenden der Universität Bremen. Auch sie arbeiten an den Client-Rechnern der Universität, allerdings sind sie im Allgemeinen nicht so angewiesen und nutzen im Vergleich auch weniger Rechner. Deswegen liegt hier die Gewichtung tiefer als bei den Mitarbeitern.
 
-\textbf{Studierenden bezogenen Wirkung.} Das vierte Kriterium beschreibt hingegen die Auswirkung auf die Studierenden der Universität Bremen. Auch sie arbeiten an den Client-Rechnern der Universität, allerdings sind sie im Allgemeinen nicht so angewiesen und nutzen im Vergleich auch weniger Rechner. Deswegen liegt hier die Gewichtung tiefer als bei den Mitarbeitern. 
-\newline
+Das fünfte Kriterium misst die Auswirkung auf die IT-Organisation. Hierzu zählt die Integration der Fachanwendungen in das System, die Auswirkungen auf die Komplexität der Systemumgebung und die Auswirkung auf das IT-Betriebsmanagement.
 
-\textbf{IT-Organisation.} Das fünfte Kriterium misst die Auswirkung auf die IT-Organisation. Hierzu zählt die Integration der Fachanwendungen in das System, die Auswirkungen auf die Komplexität der Systemumgebung und die Auswirkung auf das IT-Betriebsmanagement. Dieser Punkt ist ebenfalls relativ schwer gewichtet.
-\newline
+Das sechste Kriterium beschreibt die Auswirkung auf externe Adressaten, also die Kommunikation über die Grenzen der Universität hinaus. Dieses Kriterium ist nicht besonders schwer zu gewichten, da die Kommunikation größtenteils bei allen Systemen und Fachanwendungen gleich ablaufen kann.
 
-\textbf{Externe Adressaten.} Das sechste Kriterium beschreibt die Auswirkung auf externe Adressaten, also die Kommunikation über die Grenzen der Universität hinaus. Dieses Kriterium ist nicht besonders schwer zu gewichten, da die Kommunikation größtenteils bei allen Systemen und Fachanwendungen gleich ablaufen kann. 
-\newline
-
-\textbf{Produktivitätseffekte.} Das siebte Kriterium misst die Produktivitätseffekte wie fehlende Standards bei Programmen, längere oder kürzere Bearbeitungszeiten, eventuelle Ausfälle wegen der Umstellung des Systems usw. Da sich diese Probleme, falls sie auftreten, wahrscheinlich auf die Zeit der Umstellung beschränken, ist dieses Kriterium relativ schwach gewichtet. 
+Das siebte Kriterium misst die Produktivitätseffekte wie fehlende Standards bei Programmen, längere oder kürzere Bearbeitungszeiten, eventuelle Ausfälle wegen der Umstellung des Systems usw. Da sich diese Probleme, falls sie auftreten, wahrscheinlich auf die Zeit der Umstellung beschränken, ist dieses Kriterium relativ schwach gewichtet.
 
 \subsection*{Durchführung Nutzwertanalyse}
 \addcontentsline{toc}{subsection}{Durchführung Nutzwertanalyse}
@@ -292,16 +260,32 @@ Administration & Kein nennenswerter Unterschied zur aktuellen Situation (Windows
 \hline
 Optimierung & Optimierung und Verbesserung. ca. 10.000\euro pro Monat & 360.000\euro \\
 \hline
-Ausfall durch Umstellung & & \\
+Ausfall durch Umstellung & 20\% Ausfall bzw. Zeit in welcher das System nicht genutzt werden kann in der Woche der Umstellung & 525.000\euro \\
 \hline
 Verringerte Produktivität & Verringerung der Produktivität von ca. 15\% für 3 Wochen bei einem durchschnittlichen Gehalt von ca. 3000\euro \space im Monat & 1.181.250\euro \\
 \hline
-Gesamt & & 8.041.250\euro \newline bzw. \newline 9.841.250\euro \space mit Ubuntu Advantage \\
+Gesamt & & 8.566.250\euro \newline bzw. \newline 10.366.250\euro \space mit Ubuntu Advantage \\
 \hline
 \end{tabular}
 \end{table}
 
-\newpage
+Der Faktor Lizenzkosten teilt sich in zwei Bereiche, einmal die Kosten für das Betriebssystem und andererseits die für die nicht mit Linux kompatiblen Fachanwendungen (also die Anwendungen die neu angeschafft werden müssen).
+
+Das von uns gewählte Linux-Betriebssystem Ubuntu ist an sich erstmal kostenlos, auch im kommerziellen Bereich. Allerdings bietet Canonical (der Distributor von Ubuntu) eine für Unternehmen gedachte Version mit dem Namen \emph{Ubuntu Advantage} welche erweiterten Support bietet. Diese hat einen Preis von 150\euro \space pro Lizenz und Jahr (eine Lizenz ist für ein Gerät gültig). Da es für uns nicht wirklich ersichtlich ist ob die erweiterte Version von Ubuntu bei einer großen Anzahl von Systemen sinnvoll ist führen wir die Kosten für beide Möglichkeiten auf.
+
+Bei den Lizenzkosten für die inkompatiblen Fachanwendungen ist es schwierig die genauen Kosten festzulegen da es keine Angabe dazu gibt um welche Anwendungen es sich genau handelt. Wir gehen in unserer Abschätzung davon aus, dass es für 70 von den inkompatiblen Anwendungen alternativen für Linux gibt. Da es keine genaueren Angaben zu den eigentlichen Anwendungen gibt legen wir ein Preis von durchschnittlich 10.000\euro \space pro Anwendung pro Jahr fest.
+
+Die restlichen 30 Fachanwendungen müssen entweder an Linux angepasst werden oder teilweise neu entwickelt werden. Da es zu den Kosten von solchen Anpassungen keine wirklichen Quellen gibt gehen wir von Kosten von ca. 30.000\euro pro Anwendung aus.
+
+Einen großen Teil der Kosten muss für die Schulung bzw. Einführung der Mitarbeiter in die neue Arbeitsumgebung aufgewendet werden. Bei den meisten "Anfänger-"Schulungen für Linux gehen über 2 bis 3 Tage und kosten zwischen 1200\euro \space und 1500\euro \space pro Person . Wir haben uns für eine eintägige Schulung entschieden. Da es hierfür keine Angaben für die Kosten gibt haben wir im Vergleich zu den mehrtägigen Schulungen einen Preis von 400\euro \space pro Person festgelegt.
+
+Die Personalkosten Umfassen die Gehälter der 120 Mitarbeiter die direkt an der Umstellung beteiligt sind. Da es keine Angabe über diese 120 Personen und z.B. deren Qualifikation, haben wir einen Durchschnittsgehalt von 3.500\euro \space festgelegt. In unserer Abschätzung dauert die Zeit in welcher diese Personen mit der Umstellung beschäftigt sind ca. 5 Monate.
+
+Die Administration des neuen Systems dürfte im Vergleich zum Jetzigen keinen Mehraufwand machen und daher auch keine Mehrkosten bedeuten.
+
+
+
+
 \section*{Fazit und Empfehlung}
 \addcontentsline{toc}{section}{Fazit und Empfehlung}
 
