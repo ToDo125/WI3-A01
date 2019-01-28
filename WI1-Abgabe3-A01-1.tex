@@ -157,9 +157,9 @@ Im Folgenden sind die Kriterien der Nutzwertanalyse und die Gewichtung dieser in
 \hline
 \textbf{3.} & \textbf{Mitarbeiter bezogenen Wirkung} & 16,7\\
 \hline
-3.1 & Attraktivität der Arbeitsbedingung & 15,7 \\
+3.1 & Attraktivität der Arbeitsbedingung & 10,0 \\
 \hline
-3.2 & Qualifikationssicherung & 10,5 \\
+3.2 & Qualifikationssicherung & 6,7 \\
 \hline
 \hline
 \textbf{4.} & \textbf{Studierenden bezogenen Wirkung} & 9,4\\
@@ -193,21 +193,21 @@ Im Folgenden sind die Kriterien der Nutzwertanalyse und die Gewichtung dieser in
 \hline
 Bewertungskriterien & 1 & 2 & 3 & 4 & 5 & 6 & 7 & Gewicht & Faktor \\
 \hline
-1 & X & 1 & 2 & 2 & 2 & 2 & 2 & 11 & 26,2 \\
+1 & X & 1 & 2 & 2 & 2 & 2 & 2 & 11 & 0,262 \\
 \hline
-2 & 1 & X & 2 & 2 & 2 & 2 & 2 & 11 & 26,2 \\
+2 & 1 & X & 2 & 2 & 2 & 2 & 2 & 11 & 0,262 \\
 \hline
-3 & 0 & 0 & X & 2 & 1 & 2 & 2 & 7 & 16,7 \\
+3 & 0 & 0 & X & 2 & 1 & 2 & 2 & 7 & 0,167 \\
 \hline
-4 & 0 & 0 & 0 & X & 0 & 2 & 2 & 4 & 9,4 \\
+4 & 0 & 0 & 0 & X & 0 & 2 & 2 & 4 & 0,094 \\
 \hline
-5 & 0 & 0 & 1 & 2 & X & 2 & 2 & 7 & 16,7 \\
+5 & 0 & 0 & 1 & 2 & X & 2 & 2 & 7 & 0,167 \\
 \hline
-6 & 0 & 0 & 0 & 0 & 0 & X & 1 & 1 & 2,4 \\
+6 & 0 & 0 & 0 & 0 & 0 & X & 1 & 1 & 0,024 \\
 \hline
-7 & 0 & 0 & 0 & 0 & 0 & 1 & X & 1 & 2,4 \\
+7 & 0 & 0 & 0 & 0 & 0 & 1 & X & 1 & 0,024 \\
 \hline
-Summe: & & & & & & & & 42 & 100 \\
+Summe: & & & & & & & & 42 & 1 \\
 \hline
 \end{tabular}
 \caption*{Die Berechnung der Gewichtung der Kriterien}
@@ -234,10 +234,52 @@ Summe: & & & & & & & & 42 & 100 \\
 
 \textbf{Produktivitätseffekte.} Das siebte Kriterium misst die Produktivitätseffekte wie fehlende Standards bei Programmen, längere oder kürzere Bearbeitungszeiten, eventuelle Ausfälle wegen der Umstellung des Systems usw. Da sich diese Probleme, falls sie auftreten, wahrscheinlich auf die Zeit der Umstellung beschränken, ist dieses Kriterium relativ schwach gewichtet. 
 
+\newpage
 \subsection*{Durchführung Nutzwertanalyse}
 \addcontentsline{toc}{subsection}{Durchführung Nutzwertanalyse}
 
+Wir haben uns für eine Skaleneinteilung von 1 (sehr schlecht) bis 10 (sehr gut) entschieden. 
 
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{5cm}|p{1cm}|p{2,2cm}|p{2cm}|p{2,2cm}|p{2cm}|}
+\hline
+Kriterien & & \textbf{Linux/OSS} & & \textbf{Windows OS/Office} & \\
+ & Faktor & Zielerfüllung & Nutzwert & Zielerfüllung & Nutzwert \\
+\hline
+1. Einhaltung von Gesetzen und Verwaltungsvorschriften & 0,262 & 5 & 1,310 & 3 & 0,786 \\
+\hline
+2. IT-Sicherheit & 0,262 & 9 & 2,358 & 6 & 1,572 \\
+\hline
+2.1 Bedrohungspotential & 0,157 & 8 & 1,256 & 5 & 0,785 \\
+\hline
+2.2 Stabilität des Systems & 0,105 & 10 & 1,050 & 7 & 0,735 \\
+\hline
+3. Mitarbeiter bezogenen Wirkung & 0,167 & 6 & 1,002 & 9 & 1,503 \\
+\hline
+3.1 Attraktivität der Arbeitsbedingung & 0,100 & 6 & 0,600 & 9 & 0,900 \\
+\hline
+3.2 Qualifikationssicherung & 0,067 & 5 & 0,335 & 8 & 0,536 \\
+\hline
+4. Studierenden bezogenen Wirkung & 0,094 & 7 & 0,658 & 9 & 0,846 \\
+\hline
+5. IT-Organisation & 0,167 & 7 & 1,169 & 6 & 1,002 \\
+\hline
+5.1 Integration von bestehenden Anwendungen & 0,033 & 5 & 0,165 & 10 & 0,330 \\
+\hline
+5.2 Komplexität der Systemumgebung & 0,050 & 9 & 0,450 & 7 & 0,350 \\
+\hline
+5.3 IT-Betriebsmanagement & 0,084 & 8 & 0,672 & 4 & 0,336 \\
+\hline
+6. Externe Adressaten & 0,024 & 8 & 0,192 & 9 & 0,216 \\
+\hline
+7. Produktivitätseffekte & 0,024 & 6 & 0,144 & 9 & 0,216 \\
+\hline
+ & & Summe: & 11,361 & Summe: & 10,113 \\
+\hline
+\end{tabular}
+\caption*{Die Nutzwertanalyse}
+\end{table}
 
 \newpage
 \section*{Kostenabschätzung nach TCO-Modell}
