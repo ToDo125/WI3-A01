@@ -141,70 +141,103 @@
 Im Folgenden sind die Kriterien der Nutzwertanalyse und die Gewichtung dieser in Tabellenform aufgelistet. Anschließend werden die Kriterien noch kurz beschrieben.
 
 \begin{table}[h]
-\begin{tabular}{|p{0,5cm}|p{8,5cm}|p{2,5cm}|p{2,6cm}|}
+\begin{tabular}{|p{0,5cm}|p{12cm}|p{2cm}|}
 \hline
- & Kriterium & Gewichtung Kriterium & Gewichtung Unterkriterien\\
+ & Kriterien & Gewichtung Kriterien\\
 \hline
-\textbf{1.} &  \textbf{Aufwand für die Einhaltung von Gesetzen und Verwaltungsvorschriften} & & \\
-\hline
-\hline
-\textbf{2.} & \textbf{Auswirkung auf IT-Sicherheit} & & \\
-\hline
-2.1 & Auswirkung auf das Bedrohungspotential & & \\
-\hline
-2.2 & Auswirkung auf die Stabilität des Systems & & \\
+\textbf{1.} &  \textbf{Einhaltung von Gesetzen und Verwaltungsvorschriften}  & 26,2\\
 \hline
 \hline
-\textbf{3.} & \textbf{Mitarbeiter bezogenen Wirkung} & & \\
+\textbf{2.} & \textbf{IT-Sicherheit} & 26,2\\
 \hline
-3.1 & Zufriedenheit/Motivation/Attraktivität der Arbeitsbedingung & & \\
+2.1 & Bedrohungspotential & 15,7 \\
 \hline
-3.2 & Qualifikationssicherung & & \\
-\hline
-\hline
-\textbf{4.} & \textbf{Studierenden bezogenen Wirkung} & & \\
+2.2 & Stabilität des Systems & 10,5 \\
 \hline
 \hline
-\textbf{5.} & \textbf{Auswirkung auf die IT-Organisation} & & \\
+\textbf{3.} & \textbf{Mitarbeiter bezogenen Wirkung} & 16,7\\
 \hline
-5.1 & Integration von bestehenden Programmen & & \\
+3.1 & Attraktivität der Arbeitsbedingung & 15,7 \\
 \hline
-5.2 & Auswirkung auf die Komplexität der Systemumgebung & & \\
-\hline
-5.3 & Auswirkung auf das IT-Betriebsmanagement & & \\
+3.2 & Qualifikationssicherung & 10,5 \\
 \hline
 \hline
-\textbf{6.} & \textbf{Auswirkung auf externe Adressaten} & & \\
+\textbf{4.} & \textbf{Studierenden bezogenen Wirkung} & 9,4\\
 \hline
 \hline
-\textbf{7.} & \textbf{Produktivitätseffekte} & & \\
+\textbf{5.} & \textbf{IT-Organisation} & 16,7\\
+\hline
+5.1 & Integration von bestehenden Programmen & 3,3 \\
+\hline
+5.2 & Komplexität der Systemumgebung & 5,0 \\
+\hline
+5.3 & IT-Betriebsmanagement & 8,4 \\
+\hline
+\hline
+\textbf{6.} & \textbf{Externe Adressaten} & 2,4\\
+\hline
+\hline
+\textbf{7.} & \textbf{Produktivitätseffekte} & 2,4\\
 \hline
 \hline
 \hline
- & Gesamt & 100 & \\
+ & Gesamt & 100\\
 \hline
 \end{tabular}
 \caption*{Bei den Kriterien und der Gewichtung dieser wurde sich sehr stark an dem Projekt der Landeshauptstadt München aus dem Jahr 2003 orientiert [Quelle].}
 \end{table}
-\vspace{0,25cm}
 
-Das erste Kriterium misst den Aufwand, der betrieben werden muss, um alle gesetzlichen Vorschriften einzuhalten. Hierzu zählen auch alle Anforderungen bezüglich Datensicherheit und Datenschutz. Da sich im Netzwerk der Universität teilweise sehr sensible Daten wie Forschungsergebnisse oder persönliche Daten der Studierenden befinden, haben wir dieses Kriterium relativ schwer gewichtet.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|r|r|r|r|r|r|r|r|c|l|}
+\hline
+Bewertungskriterien & 1 & 2 & 3 & 4 & 5 & 6 & 7 & Gewicht & Faktor \\
+\hline
+1 & X & 1 & 2 & 2 & 2 & 2 & 2 & 11 & 26,2 \\
+\hline
+2 & 1 & X & 2 & 2 & 2 & 2 & 2 & 11 & 26,2 \\
+\hline
+3 & 0 & 0 & X & 2 & 1 & 2 & 2 & 7 & 16,7 \\
+\hline
+4 & 0 & 0 & 0 & X & 0 & 2 & 2 & 4 & 9,4 \\
+\hline
+5 & 0 & 0 & 1 & 2 & X & 2 & 2 & 7 & 16,7 \\
+\hline
+6 & 0 & 0 & 0 & 0 & 0 & X & 1 & 1 & 2,4 \\
+\hline
+7 & 0 & 0 & 0 & 0 & 0 & 1 & X & 1 & 2,4 \\
+\hline
+Summe: & & & & & & & & 42 & 100 \\
+\hline
+\end{tabular}
+\caption*{Die Berechnung der Gewichtung der Kriterien}
+\end{table}
 
-Das zweite Kriterium misst die Auswirkungen auf die Sicherheit des IT-Systems. Ist das System angreifbarer von außen und wie stabil ist das System? Die Begründung für die schwere Gewichtung ist ähnlich wie bei Kriterium 1 (s.o.). 
+\newpage
+\textbf{Einhaltung von Gesetzen und Verwaltungsvorschriften.} Das erste Kriterium misst den Aufwand, der betrieben werden muss, um alle gesetzlichen Vorschriften einzuhalten. Hierzu zählen auch alle Anforderungen bezüglich Datensicherheit und Datenschutz. Da sich im Netzwerk der Universität teilweise sehr sensible Daten wie Forschungsergebnisse oder persönliche Daten der Studierenden befinden, haben wir dieses Kriterium relativ schwer gewichtet.
+\newline
 
-Das dritte Kriterium beschreibt die Auswirkung auf die Mitarbeiter der Universität. Sie haben täglich mit den Client-Rechnern und den Fachanwendungen zu tun. Als besondere Punkte gibt es hier die Attraktivität des Arbeitsplatzes für alle Mitarbeiter und die Qualifikationssicherung dieser. Deswegen haben wir diesem Punkt mit \% eine relativ große Gewichtung zugesprochen. 
+\textbf{IT-Sicherheit.} Das zweite Kriterium misst die Auswirkungen auf die Sicherheit des IT-Systems. Ist das System angreifbarer von außen und wie stabil ist das System? Die Begründung für die schwere Gewichtung ist ähnlich wie bei Kriterium 1 (s.o.). 
+\newline
 
-Das vierte Kriterium beschreibt hingegen die Auswirkung auf die Studierenden der Universität Bremen. Auch sie arbeiten an den Client-Rechnern der Universität, allerdings sind sie im Allgemeinen nicht so angewiesen und nutzen im Vergleich auch weniger Rechner. Deswegen liegt hier die Gewichtung tiefer als bei den Mitarbeitern. 
+\textbf{Mitarbeiter bezogenen Wirkung.} Das dritte Kriterium beschreibt die Auswirkung auf die Mitarbeiter der Universität. Sie haben täglich mit den Client-Rechnern und den Fachanwendungen zu tun. Als besondere Punkte gibt es hier die Attraktivität des Arbeitsplatzes für alle Mitarbeiter und die Qualifikationssicherung dieser. Deswegen haben wir diesem Punkt mit 16,7 \% eine relativ große Gewichtung zugesprochen. 
+\newline
 
-Das fünfte Kriterium misst die Auswirkung auf die IT-Organisation. Hierzu zählt die Integration der Fachanwendungen in das System, die Auswirkungen auf die Komplexität der Systemumgebung und die Auswirkung auf das IT-Betriebsmanagement. 
+\textbf{Studierenden bezogenen Wirkung.} Das vierte Kriterium beschreibt hingegen die Auswirkung auf die Studierenden der Universität Bremen. Auch sie arbeiten an den Client-Rechnern der Universität, allerdings sind sie im Allgemeinen nicht so angewiesen und nutzen im Vergleich auch weniger Rechner. Deswegen liegt hier die Gewichtung tiefer als bei den Mitarbeitern. 
+\newline
 
-Das sechste Kriterium beschreibt die Auswirkung auf externe Adressaten, also die Kommunikation über die Grenzen der Universität hinaus. Dieses Kriterium ist nicht besonders schwer zu gewichten, da die Kommunikation größtenteils bei allen Systemen und Fachanwendungen gleich ablaufen kann.
+\textbf{IT-Organisation.} Das fünfte Kriterium misst die Auswirkung auf die IT-Organisation. Hierzu zählt die Integration der Fachanwendungen in das System, die Auswirkungen auf die Komplexität der Systemumgebung und die Auswirkung auf das IT-Betriebsmanagement. Dieser Punkt ist ebenfalls relativ schwer gewichtet.
+\newline
 
-Das siebte Kriterium misst die Produktivitätseffekte wie fehlende Standards bei Programmen, längere oder kürzere Bearbeitungszeiten, eventuelle Ausfälle wegen der Umstellung des Systems usw. Da sich diese Probleme, falls sie auftreten, wahrscheinlich auf die Zeit der Umstellung beschränken, ist dieses Kriterium relativ schwach gewichtet.
+\textbf{Externe Adressaten.} Das sechste Kriterium beschreibt die Auswirkung auf externe Adressaten, also die Kommunikation über die Grenzen der Universität hinaus. Dieses Kriterium ist nicht besonders schwer zu gewichten, da die Kommunikation größtenteils bei allen Systemen und Fachanwendungen gleich ablaufen kann. 
+\newline
+
+\textbf{Produktivitätseffekte.} Das siebte Kriterium misst die Produktivitätseffekte wie fehlende Standards bei Programmen, längere oder kürzere Bearbeitungszeiten, eventuelle Ausfälle wegen der Umstellung des Systems usw. Da sich diese Probleme, falls sie auftreten, wahrscheinlich auf die Zeit der Umstellung beschränken, ist dieses Kriterium relativ schwach gewichtet. 
 
 \subsection*{Durchführung Nutzwertanalyse}
 \addcontentsline{toc}{subsection}{Durchführung Nutzwertanalyse}
 
+\newpage
 \section*{Kostenabschätzung nach TCO-Modell}
 \addcontentsline{toc}{section}{Kostenabschätzung nach TCO-Modell}
 
@@ -214,7 +247,7 @@ Das siebte Kriterium misst die Produktivitätseffekte wie fehlende Standards bei
 \textbf{Lizenzen.} Der Faktor Lizenzen umfasst die Lizenzkosten für das neue Betriebssystem sowie die Lizenzkosten für die nicht mit Linux kompatiblen Fachanwendungen.
 \newline
 
-\textbf{Entwicklung und Anpassungen.} Diese umfassen die Kosten für die Anpassung oder im Notfall für dei Neuentwicklung von inkompatiblen Fachanwendeungen für welche es keine Alternativen oder zumindest keine Sinnvollen Alternativen unter Linux gibt.
+\textbf{Entwicklung und Anpassungen.} Diese umfassen die Kosten für die Anpassung oder im Notfall für dei Neuentwicklung von inkompatiblen Fachanwendungen für welche es keine Alternativen oder zumindest keine Sinnvollen Alternativen unter Linux gibt.
 \newline
 
 \textbf{Schulungen.} Die Kosten für die Schulung der Mitarbeiter für die Nutzung des neuen Systems.
@@ -245,7 +278,7 @@ Die Kostenabschätzung bezieht sich auf einen Zeitraum von 3 Jahren. Hierfür we
 \hline
 Kostenfaktoren & Teilkosten & Gesamt \\
 \hline
-Lizenzen & Ubuntu an sich kostenlos. Bei nutzung von Ubuntu Advantage Lizenzkosten von 1.800.000\euro . \newline 70 Fachanwendungen: 30.000\euro \space pro Lizenz auf 3 Jahre & 2.100.000\euro \newline bzw. \newline 3.900.000\euro \\
+Lizenzen & Ubuntu an sich kostenlos. Bei Nutzung von Ubuntu Advantage Lizenzkosten von 1.800.000\euro . \newline 70 Fachanwendungen: 30.000\euro \space pro Lizenz auf 3 Jahre & 2.100.000\euro \newline bzw. \newline 3.900.000\euro \\
 \hline
 Entwicklung und Anpassung & Anpassung / Neuentwicklung von 30 Fachanwendungen. 30.000\euro \space pro Anwendung & 900.000\euro \\
 \hline
@@ -259,13 +292,14 @@ Optimierung & Optimierung und Verbesserung. ca. 10.000\euro pro Monat & 360.000\
 \hline
 Ausfall durch Umstellung & & \\
 \hline
-Verringerte Produktivität & Verringerung der Produktivität von ca. 15\% für 3 Wochen bei einem duchschnittlichen Gehalt von ca. 3000\euro \space im Monat & 1.181.250\euro \\
+Verringerte Produktivität & Verringerung der Produktivität von ca. 15\% für 3 Wochen bei einem durchschnittlichen Gehalt von ca. 3000\euro \space im Monat & 1.181.250\euro \\
 \hline
-Geasmt & & 8.041.250\euro \newline bzw. \newline 9.841.250\euro \space mit Ubuntu Advantage \\
+Gesamt & & 8.041.250\euro \newline bzw. \newline 9.841.250\euro \space mit Ubuntu Advantage \\
 \hline
 \end{tabular}
 \end{table}
 
+\newpage
 \section*{Fazit und Empfehlung}
 \addcontentsline{toc}{section}{Fazit und Empfehlung}
 
